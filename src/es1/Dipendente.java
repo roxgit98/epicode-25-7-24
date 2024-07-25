@@ -2,7 +2,7 @@ package es1;
 
 import enums.Dipartimento;
 
-public class Dipendente {
+public abstract class Dipendente {
     private int matricola;
     private double stipendio;
     private Dipartimento dipartimento;
@@ -32,5 +32,7 @@ public class Dipendente {
     public void stampaMatricola() {
         System.out.println("ciao, questa è la mia matricola: " + matricola);
     }
+
+    public abstract void calculateSalary();
 }
 
